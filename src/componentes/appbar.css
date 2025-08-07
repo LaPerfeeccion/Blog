@@ -1,0 +1,53 @@
+/* appbar.css */
+
+/* Contenedor vertical fijo */
+.appbar {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 70px;
+  height: 80vh;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.28); /* Más blanco */
+  border: 2px solid rgba(255,255,255,0.32); /* Borde más visible */
+  box-shadow:
+    0 8px 32px 0 rgba(31, 38, 135, 0.37),
+    0 0 60px 0 rgba(255,255,255,0.22),
+    inset 0 1px 40px 0 rgba(255,255,255,0.22);
+  backdrop-filter: blur(38px) saturate(180%);
+  -webkit-backdrop-filter: blur(38px) saturate(180%);
+  z-index: 1000;
+  animation: glassGlow 7s ease-in-out infinite;
+}
+/* Animación glow más notoria */
+@keyframes glassGlow {
+  0% {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.18), 0 8px 32px 0 rgba(31, 38, 135, 0.55);
+  }
+  50% {
+    box-shadow: 0 0 80px rgba(255, 255, 255, 0.767), 0 12px 40px 0 rgba(31, 38, 135, 0.65);
+  }
+  100% {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.18), 0 8px 32px 0 rgba(31, 38, 135, 0.55);
+  }
+}
+
+/* Iconos dentro de la barra */
+.appbar svg {
+  font-size: 24px;
+  color: white;
+  margin: 12px 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.appbar svg:hover {
+  color: #ffee00;
+  transform: scale(1.2);
+}
