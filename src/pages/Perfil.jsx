@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar } from '../componentes/appbar';
+import AppBar from '../componentes/Appbar';
 import './principal.css';
 import fpImg from '../assets/fp.png';
 
