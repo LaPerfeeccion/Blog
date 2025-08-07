@@ -1,5 +1,4 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { AppBar } from '../componentes/appbar';
 import './principal.css';
 
@@ -13,7 +12,6 @@ const SkeletonLoader = () => (
 
 
 const Principal = () => {
-  const navigate = useNavigate();
 
   return (
     <>
